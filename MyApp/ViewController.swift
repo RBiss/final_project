@@ -9,18 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    
+ 
    
+    @IBOutlet weak var slider: UISlider!
     
+  
+    @IBOutlet weak var label: UILabel!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
        
     }
-   
-
     
     @IBOutlet weak var logoName: UITextView!
     
@@ -29,12 +30,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var textIntro: UITextView!
     @IBOutlet weak var background: UIImageView!
     
-    @IBAction func sliderMoved(_ slider: UISlider) {
-        print ("The value is \(slider.value)")
+    @IBAction func sliderMoved(_ slider: UISlider)  {
+
+        label.text = ("\(slider.value)")
     }
-//    @IBAction func sliderYears(_ slider: UISlider) {
+    
+    
+    @IBAction func GetStarted(_ sender: Any) {
+    }
+    @IBAction func date(_ sender: Any) {
+    }
+    //    @IBAction func sliderYears(_ slider: UISlider) {
 //        print ("The value is \(slider.value)")
 //    }
     
+   
 }
 
