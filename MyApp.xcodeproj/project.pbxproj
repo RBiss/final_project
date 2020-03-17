@@ -11,8 +11,30 @@
 		0607215E23FDDF1E00FBD623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0607215C23FDDF1E00FBD623 /* Main.storyboard */; };
 		0607216023FDDF1E00FBD623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0607215F23FDDF1E00FBD623 /* Assets.xcassets */; };
 		0607216323FDDF1E00FBD623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0607216123FDDF1E00FBD623 /* LaunchScreen.storyboard */; };
+		0692EF6124202DBA00D18701 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0692EF5F24202DBA00D18701 /* Realm.framework */; };
+		0692EF6224202DBA00D18701 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0692EF5F24202DBA00D18701 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0692EF6324202DBA00D18701 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0692EF6024202DBA00D18701 /* RealmSwift.framework */; };
+		0692EF6424202DBA00D18701 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0692EF6024202DBA00D18701 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0692EF6724203CB100D18701 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0692EF6624203CB100D18701 /* MainViewController.swift */; };
+		0692EF6924203D5C00D18701 /* RealDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0692EF6824203D5C00D18701 /* RealDataModel.swift */; };
+		0692EF6B242047FF00D18701 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0692EF6A242047FF00D18701 /* DetailViewController.swift */; };
 		06F83A1C240442B3002D3C3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0607215A23FDDF1E00FBD623 /* ViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0692EF6524202DBA00D18701 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0692EF6424202DBA00D18701 /* RealmSwift.framework in Embed Frameworks */,
+				0692EF6224202DBA00D18701 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0607215523FDDF1E00FBD623 /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +44,11 @@
 		0607215F23FDDF1E00FBD623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0607216223FDDF1E00FBD623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0607216423FDDF1F00FBD623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0692EF5F24202DBA00D18701 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		0692EF6024202DBA00D18701 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		0692EF6624203CB100D18701 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0692EF6824203D5C00D18701 /* RealDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealDataModel.swift; sourceTree = "<group>"; };
+		0692EF6A242047FF00D18701 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0692EF6324202DBA00D18701 /* RealmSwift.framework in Frameworks */,
+				0692EF6124202DBA00D18701 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +67,8 @@
 		0607214C23FDDF1E00FBD623 = {
 			isa = PBXGroup;
 			children = (
+				0692EF5F24202DBA00D18701 /* Realm.framework */,
+				0692EF6024202DBA00D18701 /* RealmSwift.framework */,
 				0607215723FDDF1E00FBD623 /* MyApp */,
 				0607215623FDDF1E00FBD623 /* Products */,
 			);
@@ -56,6 +87,9 @@
 			children = (
 				0607215823FDDF1E00FBD623 /* AppDelegate.swift */,
 				0607215A23FDDF1E00FBD623 /* ViewController.swift */,
+				0692EF6624203CB100D18701 /* MainViewController.swift */,
+				0692EF6A242047FF00D18701 /* DetailViewController.swift */,
+				0692EF6824203D5C00D18701 /* RealDataModel.swift */,
 				0607215C23FDDF1E00FBD623 /* Main.storyboard */,
 				0607215F23FDDF1E00FBD623 /* Assets.xcassets */,
 				0607216123FDDF1E00FBD623 /* LaunchScreen.storyboard */,
@@ -74,6 +108,7 @@
 				0607215123FDDF1E00FBD623 /* Sources */,
 				0607215223FDDF1E00FBD623 /* Frameworks */,
 				0607215323FDDF1E00FBD623 /* Resources */,
+				0692EF6524202DBA00D18701 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0692EF6724203CB100D18701 /* MainViewController.swift in Sources */,
+				0692EF6924203D5C00D18701 /* RealDataModel.swift in Sources */,
+				0692EF6B242047FF00D18701 /* DetailViewController.swift in Sources */,
 				06F83A1C240442B3002D3C3C /* ViewController.swift in Sources */,
 				0607215923FDDF1E00FBD623 /* AppDelegate.swift in Sources */,
 			);
@@ -284,6 +322,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YK2KQPCDUY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +344,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YK2KQPCDUY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

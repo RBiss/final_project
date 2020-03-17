@@ -385,18 +385,18 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="business_1280" highlightedImage="business_1280" translatesAutoresizingMaskIntoConstraints="NO" id="R44-EU-LbL">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3m-2j-S4O">
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" misplaced="YES" restorationIdentifier="Coffee" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3m-2j-S4O">
                                 <rect key="frame" x="41" y="254" width="338" height="41"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                <state key="normal" title="Coffee - Drinks">
+                                <state key="normal" title="Coffee">
                                     <color key="titleColor" red="0.28979170319999997" green="0.32631602879999999" blue="0.60002774000000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hTa-yr-eSS" kind="showDetail" id="ha4-uW-GYu"/>
+                                    <segue destination="hTa-yr-eSS" kind="showDetail" identifier="coffee" id="ha4-uW-GYu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZ7-uU-jc8">
@@ -409,6 +409,9 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hTa-yr-eSS" kind="show" identifier="music" id="FBD-de-btK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMv-KE-wsl">
                                 <rect key="frame" x="40" y="426" width="338" height="41"/>
@@ -420,6 +423,9 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hTa-yr-eSS" kind="showDetail" identifier="lottery" id="bxO-Jq-1dA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cs1-Gk-h41">
                                 <rect key="frame" x="38" y="588" width="338" height="41"/>
@@ -427,10 +433,13 @@
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                <state key="normal" title="Income - Payroll">
+                                <state key="normal" title="Vaping">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hTa-yr-eSS" kind="showDetail" identifier="vaping" id="nsq-he-eQ5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flF-PB-j9J">
                                 <rect key="frame" x="38" y="339" width="338" height="41"/>
@@ -438,10 +447,13 @@
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                <state key="normal" title="Fast Food">
+                                <state key="normal" title="Liquor">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hTa-yr-eSS" kind="show" identifier="liquor" id="PJq-iN-2F5"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Select a spending item or your payroll" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2Y3-ua-M27">
                                 <rect key="frame" x="40" y="126" width="340" height="113"/>
@@ -487,4 +499,7 @@
     <resources>
         <image name="business_1280" width="262" height="407.5"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ha4-uW-GYu"/>
+    </inferredMetricsTieBreakers>
 </document>
